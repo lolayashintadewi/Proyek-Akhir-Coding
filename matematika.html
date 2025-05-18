@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materi Matematika</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Warna tema biru elegan */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #001f3f, #003366);
+      color: #e0f0ff;
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      color: #89c4ff;
+      margin-bottom: 40px;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+    ul {
+      max-width: 700px;
+      width: 100%;
+      background: #002244;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 102, 204, 0.5);
+      padding: 30px 40px;
+      list-style: none;
+      counter-reset: item;
+      letter-spacing: 0.03em;
+      line-height: 1.6;
+    }
+    ul li {
+      position: relative;
+      font-size: 1.25rem;
+      margin-bottom: 28px;
+      padding-left: 50px;
+      color: #cfd8dc;
+      transition: color 0.3s ease;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+    }
+    ul li:hover {
+      color: #bbdefb;
+    }
+    ul li::before {
+      counter-increment: item;
+      content: counter(item);
+      position: absolute;
+      left: 15px;
+      top: 10px;
+      background: #2979ff;
+      color: white;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 36px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+    strong {
+      color: #90caf9;
+      min-width: 160px;
+      display: inline-block;
+    }
+    a.back {
+      margin-top: 50px;
+      padding: 14px 36px;
+      background: #2979ff;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 6px 12px rgba(41, 121, 255, 0.6);
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
+      font-size: 1.2rem;
+    }
+    a.back:hover {
+      background: #1565c0;
+      box-shadow: 0 8px 18px rgba(21, 101, 192, 0.8);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Materi Pelajaran Matematika</h1>
+
+  <ul>
+    <li><strong>Aljabar:</strong> Operasi bilangan, bentuk aljabar, dan pemfaktoran persamaan kuadrat.</li>
+    <li><strong>Geometri:</strong> Menghitung luas, keliling, dan volume bangun datar dan ruang.</li>
+    <li><strong>Statistika:</strong> Mengolah data, menghitung rata-rata, median, modus, dan penyajian data.</li>
+    <li><strong>Trigonometri:</strong> Hubungan sudut, fungsi sinus, cosinus, tangen, dan penerapannya.</li>
+    <li><strong>Pertidaksamaan:</strong> Menyelesaikan pertidaksamaan linear dan kuadrat satu variabel.</li>
+  </ul>
+
+  <a href="materi.html" class="back">← Kembali ke Daftar Pelajaran</a>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materi Biologi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #bbdefb, #64b5f6);
+      color: #1a237e;
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      color: #0d47a1;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    ul {
+      max-width: 700px;
+      width: 100%;
+      background: #e3f2fd;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(13, 71, 161, 0.3);
+      padding: 30px 40px;
+      list-style: none;
+      counter-reset: item;
+    }
+    ul li {
+      position: relative;
+      font-size: 1.25rem;
+      margin-bottom: 25px;
+      padding-left: 40px;
+      color: #283593;
+      transition: color 0.3s ease;
+    }
+    ul li:hover {
+      color: #0d47a1;
+    }
+    ul li::before {
+      counter-increment: item;
+      content: counter(item);
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #0d47a1;
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 28px;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: background 0.3s ease;
+    }
+    ul li:hover::before {
+      background: #5472d3;
+    }
+    strong {
+      color: #0d47a1;
+    }
+    a.back {
+      margin-top: 50px;
+      padding: 14px 28px;
+      background: #0d47a1;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 6px 12px rgba(13, 71, 161, 0.4);
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
+      font-size: 1.2rem;
+    }
+    a.back:hover {
+      background: #5472d3;
+      box-shadow: 0 8px 16px rgba(84, 114, 211, 0.6);
+    }
+    /* Responsive */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+      ul {
+        padding: 20px;
+      }
+      ul li {
+        font-size: 1.1rem;
+        padding-left: 30px;
+      }
+      ul li::before {
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        left: 5px;
+      }
+      a.back {
+        font-size: 1rem;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Materi Pelajaran Biologi</h1>
+
+  <ul>
+    <li><strong>Sel:</strong> Struktur dan fungsi sel, organel sel.</li>
+    <li><strong>Sistem Organ:</strong> Sistem pencernaan, pernapasan, peredaran darah pada manusia.</li>
+    <li><strong>Ekosistem:</strong> Komponen biotik dan abiotik serta hubungan antar makhluk hidup.</li>
+    <li><strong>Genetika:</strong> Pewarisan sifat, DNA, dan kromosom.</li>
+    <li><strong>Keanekaragaman Hayati:</strong> Jenis-jenis spesies, klasifikasi makhluk hidup.</li>
+  </ul>
+
+  <a href="materi.html" class="back">← Kembali ke Daftar Pelajaran</a>
+
+</body>
+</html>
